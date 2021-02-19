@@ -338,8 +338,19 @@ h1 {
   font-family: 'Comfortaa-Regular', sans-serif;
   font-size: 5.57rem; }
 
+h2 {
+  font-family: 'Comfortaa-Regular', sans-serif;
+  font-size: 4.57rem;
+  text-align: center; }
+
 p {
-  font-size: 3.14rem; }
+  font-size: 2.1rem;
+  line-height: 150%;
+  text-indent: 35px; }
+
+ul {
+  font-size: 1.9rem;
+  line-height: 150%; }
 
 .container {
   display: flex;
@@ -368,7 +379,8 @@ canvas {
   background-position: 50% 50%; }
 
 .header {
-  margin: 40px 20px; }
+  position: relative;
+  margin: 2.85rem 1.42rem; }
   .header__button {
     display: none;
     margin: 0 auto;
@@ -395,6 +407,8 @@ canvas {
     @media (max-width: 480px) {
       .header__button {
         display: block; }
+        .header__button:focus, .header__button:active {
+          margin-left: 0; }
         .header__button:focus + nav,
         .header__button:active + nav {
           visibility: visible; } }
@@ -413,8 +427,8 @@ canvas {
     font-size: 1.7rem;
     color: #915F6D;
     text-transform: uppercase;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent; }
+    border: 3px solid transparent;
+    padding: 5px 5px; }
     @media (max-width: 768px) {
       .nav a {
         font-size: 1.4rem; } }
@@ -433,29 +447,55 @@ canvas {
       justify-content: space-around; } }
   @media (max-width: 480px) {
     .nav {
+      position: absolute;
       visibility: hidden;
       display: flex;
       flex-direction: column;
-      margin: 0 auto;
-      margin-top: 10px;
+      right: 0;
+      top: 0;
       border: 1px solid #915F6D;
       border-radius: 8px;
-      width: 150px;
+      width: 80%;
       padding: 10px 10px; }
       .nav a {
         font-size: 2.4rem;
         padding-top: 5px;
         padding-bottom: 5px; } }
 
+.active {
+  border: 3px solid white !important;
+  color: white !important; }
+
 .title {
-  margin: 0 auto;
-  margin-top: 10rem; }
+  margin: 10rem auto 22rem; }
   @media (max-width: 480px) {
     .title {
-      margin-top: 0; } }
+      margin-top: 110px; } }
   .title h1 {
     text-align: center; }
   .title p {
     margin-top: -25px;
     text-transform: uppercase;
     text-align: center; }
+
+.wrapper {
+  position: relative;
+  width: 95%;
+  max-width: 1256px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 5px; }
+
+.about {
+  background-color: #A4C3BB; }
+  .about__title {
+    margin-top: 30px; }
+  .about__text {
+    margin-top: -20%;
+    padding-bottom: 20px;
+    width: 60%; }
+  .about__foto {
+    position: absolute;
+    width: 35%;
+    top: 20%;
+    right: 0; }
