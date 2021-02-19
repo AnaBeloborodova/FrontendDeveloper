@@ -4,16 +4,104 @@ canvas
   left: 0
   display: block
   vertical-align: bottom
-  z-index: 0
+  z-index: -1
 
 #particles-js
   position: absolute
   width: 100%
   height: 100%
   background-color: #c39aa1
-  background-image: url('')
+  //background-image: url('')
   background-repeat: no-repeat
   background-size: cover
   background-position: 50% 50%
+
+
+.header
+  margin: 40px 20px
+  &__button
+    display: none
+    margin: 0 auto
+    height: 50px
+    background-color: transparent
+    border: 2px solid transparent
+
+    &:hover
+      cursor: pointer
+      border: 2px solid $light
+      border-radius: 8px
+      outline: none
+    &:hover > div
+      box-shadow: 0 10px 0 $light, 0 -10px 0 $light
+      outline: none
+
+    &:focus,
+    &:active
+      border: 2px solid $dark
+      border-radius: 8px
+      outline: none
+
+    &:focus > div,
+    &:active > div
+      border: 1px solid $dark
+      box-shadow: 0 10px 0 $dark, 0 -10px 0 $dark
+      outline: none
+    @media (max-width: $mobile)
+      display: block
+      &:focus + nav,
+      &:active + nav
+        visibility: visible
+
+
+.button
+  &__lines
+    width: 40px
+    border: 1px solid $light
+    box-shadow: 0 8px 0 $light, 0 -8px 0 $light
+
+.nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  & a
+    text-decoration: none
+    font-size: 1.7rem
+    color: $dark
+    text-transform: uppercase
+    border-top: 3px solid transparent
+    border-bottom: 3px solid transparent
+    @media (max-width: $tablet)
+      font-size: 1.4rem
+  & a:hover
+    cursor: pointer
+    color: $light
+    border-top: 3px solid $light
+    border-bottom: 3px solid $light
+  & a:focus,
+  & a:active
+    color: darken($dark, 10%)
+    border-top: 3px solid transparent
+    border-bottom: 3px solid transparent
+
+  @media (max-width: $tablet)
+    justify-content: space-around
+  @media (max-width: $mobile)
+    visibility: hidden
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    margin-top: 10px
+    border: 1px solid $dark
+    border-radius: 8px
+    width: 150px
+    padding: 10px 10px
+    & a
+      font-size: 2.4rem
+      padding-top: 5px
+      padding-bottom: 5px
+
+
+
+
 
 
