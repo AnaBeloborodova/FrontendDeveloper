@@ -349,7 +349,7 @@ p {
   text-indent: 35px; }
 
 ul {
-  font-size: 1.9rem;
+  font-size: 2.1rem;
   line-height: 150%; }
 
 .container {
@@ -511,3 +511,78 @@ canvas {
         position: relative;
         width: 50%;
         margin: 0 auto; } }
+
+.skills {
+  background-color: #e8d1d5; }
+  .skills__circle-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px; }
+
+.circle-row__circle-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px; }
+  .circle-row__circle-item span {
+    font-size: 2rem; }
+  .circle-row__circle-item object {
+    border: 1px solid red; }
+
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative; }
+
+.circle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%; }
+  .circle-fon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000; }
+  .circle-truck {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    transform: rotate(0deg);
+    transform-origin: 100% 50%; }
+    .circle-truck.left {
+      left: 0;
+      z-index: 1;
+      background-color: green; }
+    .circle-truck.right {
+      left: 0;
+      background-color: #000;
+      z-index: 1; }
+    .circle-truck.active-track {
+      z-index: 0; }
+  .circle-number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 2;
+    color: black;
+    font-size: 18px; }
