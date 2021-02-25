@@ -1,88 +1,3 @@
-// Анимация skills
-/*
-new Vivus(
-    'animate-circle-1',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-new Vivus(
-    'animate-circle-2',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-new Vivus(
-    'animate-circle-3',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-
-new Vivus(
-    'animate-circle-4',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-new Vivus(
-    'animate-circle-5',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-new Vivus(
-    'animate-circle-6',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-new Vivus(
-    'animate-circle-7',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-new Vivus(
-    'animate-circle-8',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-new Vivus(
-    'animate-circle-9',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-new Vivus(
-    'animate-circle-10',
-    {
-        type: 'delayed',
-        duration: 200,
-        animTimingFunction: Vivus.EASE
-    }
-);
-*/
-
 // progressbar.js@1.0.0 version is used
 // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 /*
@@ -118,8 +33,8 @@ bar.text.style.fontSize = '2rem';
 
 bar.animate(1.0);  // Number from 0.0 to 1.0
 */
-
 /*
+
 let circleArray = document.querySelectorAll('.circle');
 
 circleArray.forEach((item)=>{
@@ -139,7 +54,7 @@ circleArray.forEach((item)=>{
                 item.querySelector('.circle-fon').style.background = 'green';
                 rightBlock.classList.add('active-track');
             }
-            setTimeout(test,40);
+            setInterval(test, 1000);
         } else {
 
         }
@@ -147,5 +62,4 @@ circleArray.forEach((item)=>{
     test();
 
 });
-
 */
