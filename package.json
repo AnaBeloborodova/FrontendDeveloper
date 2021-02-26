@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "jquery": "^3.5.1",
     "jshint": "^2.11.0",
     "particles.js": "^2.0.0",
