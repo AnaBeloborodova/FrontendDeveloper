@@ -278,4 +278,5 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-
+// Анимация заголовков
+AOS.init();
