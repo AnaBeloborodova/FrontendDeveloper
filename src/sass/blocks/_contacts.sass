@@ -1,0 +1,109 @@
+.contacts
+  padding-bottom: 50px
+  background-color: $fifth
+  color: $dark
+  font-size: 2rem
+
+.row
+  position: relative
+  display: flex
+  justify-content: space-around
+  align-items: center
+  &__social
+    display: flex
+    flex-direction: column
+    justify-content: left
+    align-items: flex-start
+  &__message
+    padding-left: 30px
+    & img
+      width: 40px
+
+  &__form
+    display: block
+    position: absolute
+    top: -450px
+    padding: 20px
+    z-index: 2
+    background-color: $light
+    border: 2px solid rgba(145, 95, 109, 0.6)
+    border-radius: 20px
+    width: 50%
+    font-size: 1.6rem
+
+
+.social
+  &__tel
+    padding-bottom: 15px
+    & a
+      padding-left: 5px
+
+    & img
+      width: 30px
+      height: 30px
+      &:hover
+        transform: scale(1.1)
+    & b
+      padding-left: 10px
+  &__gmail
+    padding-bottom: 15px
+    text-decoration: none
+    color: $dark
+    & img
+      width: 30px
+      height: 30px
+      &:hover
+        transform: scale(1.1)
+    & b
+      padding-left: 10px
+
+  &__discord
+    text-decoration: none
+    color: $dark
+    & img
+      width: 30px
+      height: 30px
+      &:hover
+        transform: scale(1.1)
+    & b
+      padding-left: 10px
+
+.form
+  & div
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    padding-top: 20px
+    & label
+      font-size: 1.5rem
+    & input, & textarea
+      margin-top: 5px
+      padding-left: 10px
+      padding-bottom: 5px
+      outline: none
+    & input
+      width: 270px
+  &__tel
+    display: inline
+    float: right
+  & button
+    margin-top: 10px
+    display: block
+    margin: 0 auto
+    margin-top: 10px
+    padding-left: 30px
+    padding-right: 30px
+  &__close
+    position: absolute
+    top: 5px
+    right: 5px
+    width: 21px
+    height: 21px
+    background: url("/dist/img/close.png") center no-repeat
+    outline: none
+    border: none
+
+
+
+
