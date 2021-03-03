@@ -25,18 +25,19 @@ try {
     $mail->Port = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('bel.ana.121418@gmail.com', 'Анастасия');
-    $mail->addAddress('bel.ana.121418@gmail.com', 'Joe User');     // Add a recipient
+    $mail->setFrom('bel.ana.121418@gmail.com', 'Anastasiya');
+    $mail->addAddress('bel.ana.121418@gmail.com', 'Anastasiya');
+    // Add a recipient
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Новая заявка с сайта';
+    $mail->Subject = 'New request from the site';
     $mail->Body = "Имя пользователя: ${userName}, его почта: ${userEmail}, телефон: ${userPhone}, сообщение: ${userMessage}";
 
 
 
     $mail->send();
-    echo 'Письмо отправлено';
+    header('location: thanks.html');
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }
