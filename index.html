@@ -32,12 +32,28 @@
         <h1>Анастасия Белобородова</h1>
         <p>Web developer</p>
         <button class="basic title__basic" data-aos="fade-left" data-aos-duration="2000">Заказать сайт</button>
+        <form action="" class="form title__form">
+            <h3>Укажите Ваши данные и я Вам перезвоню</h3>
+            <div class="tel form__tel"><label for="tel">Ваш телефон</label>
+                <input type="tel" name="tel" placeholder="Ваш телефон"></div>
+            <div class="name form__name"><label for="name">Ваше имя</label>
+                <input type="text" name="name" placeholder="Ваше имя"></div>
+
+            <div class="email form__email"><label for="email">Ваш email</label>
+                <input type="email" name="email" placeholder="Ваш email"></div>
+            <div class="area form__area"><label for="message">Введите сообщение</label>
+                <textarea type="text" name="message" rows="3" cols="61" placeholder="Введите сообщение в свободной форме"></textarea>
+            </div>
+            <button type="submit" class="basic">Отправить</button>
+            <button class="close form__close">
+
+        </form>
     </section>
 </div>
 
 <section class="about">
     <div class="wrapper">
-        <h2 class="title about__title" data-aos="fade-left">Обо мне</h2>
+        <h2 class="title about__title" data-aos="fade-left" data-aos-duration="2000">Обо мне</h2>
         <div class="text about__text">
             <p>Привет! Меня зовут Анастасия, я web-разработчик из Барнаула. В настоящее время я создаю сайты на основе
                 графических макетов для малого и среднего бизнеса.
@@ -67,7 +83,7 @@
 
 <section class="skills">
     <div class="wrapper">
-        <h2 data-aos="fade-left">Мои навыки</h2>
+        <h2 data-aos="fade-left" data-aos-duration="2000">Мои навыки</h2>
         <div class="circle-row skills__circle-row">
             <div class="circle-item circle-row__circle-item" >
                 <svg width="200" height="200">
@@ -187,17 +203,20 @@
 
 <section class="project">
     <div class="wrapper">
-        <h2 data-aos="fade-left">Проекты</h2>
+        <h2 data-aos="fade-left" data-aos-duration="2000">Проекты</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="dist/img/project1.jpg" alt="Repair_Desing">
+                    <button class="basic"><a href="#">Подробнее</a></button>
                 </div>
                 <div class="swiper-slide">
                     <img src="dist/img/project2.jpg" alt="Glassy_Shop">
+                    <button class="basic"><a href="#">Подробнее</a></button>
                 </div>
                 <div class="swiper-slide">
                     <img src="dist/img/project3.jpg" alt="Food_Delivery">
+                    <button class="basic"><a href="#">Подробнее</a></button>
                 </div>
             </div>
             <!-- Add Arrows -->
@@ -211,7 +230,7 @@
 
 <section class="contacts">
     <div class="wrapper">
-        <h2 data-aos="fade-left">Контакты</h2>
+        <h2 data-aos="fade-left" data-aos-duration="2000">Контакты</h2>
         <div class="row">
             <div class="social row__social">
                 <div class="tel social__tel">
@@ -238,7 +257,7 @@
             <form action="" class="form row__form">
                 <h3>Укажите Ваши данные и я Вам перезвоню</h3>
                 <div class="tel form__tel"><label for="tel">Ваш телефон</label>
-                    <input type="text" name="tel" placeholder="Ваш телефон"></div>
+                    <input type="tel" name="tel" placeholder="Ваш телефон"></div>
                 <div class="name form__name"><label for="name">Ваше имя</label>
                     <input type="text" name="name" placeholder="Ваше имя"></div>
 
@@ -264,6 +283,8 @@
 <script src="/dist/js/app.js"></script>
 <script src="/dist/js/swiper.min.js"></script>
 <script src="/dist/js/aos.js"></script>
+<script src="/dist/js/jquery.validate.min.js"></script>
+<script src="/dist/js/jquery.mask.min.js"></script>
 <script src="/dist/js/main.js"></script>
 
 </body>

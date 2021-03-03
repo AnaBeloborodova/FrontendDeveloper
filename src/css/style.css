@@ -399,8 +399,15 @@ canvas {
   background-position: 50% 50%; }
 
 .header {
-  position: relative;
-  margin: 2.85rem 1.42rem; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 1.42rem;
+  overflow: hidden;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(195, 154, 161, 0.3);
+  padding-top: 30px; }
   .header__button {
     display: none;
     margin: 0 auto;
@@ -441,7 +448,9 @@ canvas {
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  width: 80%;
+  margin: 0 auto; }
   .nav a {
     text-decoration: none;
     font-size: 1.7rem;
@@ -486,8 +495,16 @@ canvas {
   border: 3px solid white !important;
   color: white !important; }
 
+label.invalid {
+  color: tomato;
+  font-size: 0.7rem;
+  font-family: 'Oswald-Regular', sans-serif; }
+
+input.invalid {
+  border: 2px solid tomato; }
+
 .title {
-  margin: 10rem auto 22rem; }
+  margin: 20rem auto 22rem; }
   @media (max-width: 480px) {
     .title {
       margin-top: 110px; } }
@@ -505,6 +522,19 @@ canvas {
     padding-right: 40px;
     padding-left: 40px;
     font-size: 2rem; }
+  .title__form {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 400px;
+    padding: 20px;
+    z-index: 2;
+    background-color: white;
+    border: 2px solid rgba(145, 95, 109, 0.6);
+    border-radius: 20px;
+    width: 50%;
+    font-size: 1.6rem;
+    color: #915F6D; }
 
 .wrapper {
   position: relative;
@@ -575,6 +605,7 @@ canvas {
   height: 100%; }
 
 .swiper-slide {
+  position: relative;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -592,6 +623,14 @@ canvas {
   align-items: center; }
   .swiper-slide img {
     max-width: 80%; }
+  .swiper-slide button {
+    position: absolute;
+    padding: 10px 25px;
+    bottom: 10px;
+    right: 20px; }
+    .swiper-slide button a {
+      text-decoration: none;
+      color: white; }
 
 .swiper-button-prev {
   background: url("/dist/img/left-arrow.svg") center no-repeat;
@@ -602,16 +641,18 @@ canvas {
   color: transparent; }
 
 .contacts {
-  padding-bottom: 50px;
+  padding-bottom: 150px;
   background-color: #FAE59C;
   color: #915F6D;
-  font-size: 2rem; }
+  font-size: 2rem;
+  height: 90%; }
 
 .row {
   position: relative;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  padding-top: 40px; }
   .row__social {
     display: flex;
     flex-direction: column;
@@ -622,9 +663,9 @@ canvas {
     .row__message img {
       width: 40px; }
   .row__form {
-    display: block;
+    display: none;
     position: absolute;
-    top: -450px;
+    top: -150px;
     padding: 20px;
     z-index: 2;
     background-color: white;
@@ -705,3 +746,11 @@ canvas {
   background: url("/dist/img/close.png") center no-repeat;
   outline: none;
   border: none; }
+
+label.invalid {
+  color: tomato;
+  font-size: 0.7rem;
+  font-family: 'Oswald-Regular', sans-serif; }
+
+input.invalid {
+  border: 2px solid tomato; }

@@ -18,8 +18,15 @@ canvas
 
 
 .header
-  position: relative
-  margin: 2.85rem 1.42rem
+  position: fixed
+  top: 0
+  left: 0
+  margin: 0 1.42rem
+  overflow: hidden
+  width: 100%
+  z-index: 999
+  background-color: rgba(195, 154, 161, 0.3)
+  padding-top: 30px
 
   &__button
     display: none
@@ -69,6 +76,8 @@ canvas
   display: flex
   justify-content: space-between
   align-items: center
+  width: 80%
+  margin: 0 auto
   & a
     text-decoration: none
     font-size: 1.7rem
@@ -113,7 +122,13 @@ canvas
     color: $light !important
 
 
-
-
+label
+  &.invalid
+    color: tomato
+    font-size: 0.7rem
+    font-family: 'Oswald-Regular', sans-serif
+input
+  &.invalid
+    border: 2px solid tomato
 
 

@@ -280,3 +280,94 @@ var swiper = new Swiper('.swiper-container', {
 
 // Анимация заголовков
 AOS.init();
+
+// подключение форм
+
+let rowForm = document.querySelector('.row__form');
+document.querySelector('.row__message').addEventListener('click', ()=>{
+    rowForm.style.display = 'block';
+});
+
+rowForm.querySelector('.form__close').addEventListener('click', ()=>{
+    rowForm.style.display = 'none';
+});
+
+let titleForm = document.querySelector('.title__form');
+document.querySelector('.title__basic').addEventListener('click', ()=>{
+    titleForm.style.display = 'block';
+});
+
+titleForm.querySelector('.form__close').addEventListener('click', ()=>{
+    titleForm.style.display = 'none';
+});
+
+// Валидация формы
+
+$(".title__form").validate({
+    errorClass: "invalid",
+    rules: {
+        // simple rule, converted to {required:true}
+        name: {
+            required: true,
+            minlength: 2
+        },
+        // compound rule
+        email: {
+            required: true,
+            email: true
+        },
+        tel: {
+            required: true,
+            tel: true
+        }
+    },
+    messages: {
+        name: {
+            required: "Имя и Фамилия обязательны",
+            minlength: "Имя не короче двух букв"
+        },
+        email: {
+            required: "Обязательно введите email",
+            email: "Введите в формате name@domain.com"
+        },
+        tel: {
+            required: "Телефон обязателен"
+        }
+    }
+});
+
+$(".row__form").validate({
+    errorClass: "invalid",
+    rules: {
+        // simple rule, converted to {required:true}
+        name: {
+            required: true,
+            minlength: 2
+        },
+        // compound rule
+        email: {
+            required: true,
+            email: true
+        },
+        tel: {
+            required: true,
+            tel: true
+        }
+    },
+    messages: {
+        name: {
+            required: "Имя и Фамилия обязательны",
+            minlength: "Имя не короче двух букв"
+        },
+        email: {
+            required: "Обязательно введите email",
+            email: "Введите в формате name@domain.com"
+        },
+        tel: {
+            required: "Телефон обязателен"
+        }
+    }
+});
+
+// маска для телефона
+$('[type=tel]').mask('+7(000) 000-0000');

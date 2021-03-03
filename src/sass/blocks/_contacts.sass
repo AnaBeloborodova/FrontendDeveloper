@@ -1,14 +1,16 @@
 .contacts
-  padding-bottom: 50px
+  padding-bottom: 150px
   background-color: $fifth
   color: $dark
   font-size: 2rem
+  height: 90%
 
 .row
   position: relative
   display: flex
   justify-content: space-around
   align-items: center
+  padding-top: 40px
   &__social
     display: flex
     flex-direction: column
@@ -20,9 +22,10 @@
       width: 40px
 
   &__form
-    display: block
+    display: none
+
     position: absolute
-    top: -450px
+    top: -150px
     padding: 20px
     z-index: 2
     background-color: $light
@@ -104,6 +107,12 @@
     outline: none
     border: none
 
-
-
+label
+  &.invalid
+    color: tomato
+    font-size: 0.7rem
+    font-family: 'Oswald-Regular', sans-serif
+input
+  &.invalid
+    border: 2px solid tomato
 
