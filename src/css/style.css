@@ -335,6 +335,9 @@ html {
     html {
       font-size: 7px; } }
 
+body {
+  background-color: #c39aa1; }
+
 h1 {
   font-family: 'Comfortaa-Regular', sans-serif;
   font-size: 5.57rem; }
@@ -394,7 +397,6 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #c39aa1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%; }
@@ -545,31 +547,31 @@ input.invalid {
   box-sizing: border-box;
   padding-top: 5px; }
 
-.about {
-  background-color: #A4C3BB; }
-  .about__title {
-    margin-top: 30px; }
-  .about__text {
-    margin-top: -20%;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    width: 60%;
-    text-align: justify; }
-    @media (max-width: 480px) {
-      .about__text {
-        margin-top: -35%;
-        width: 95%; } }
-  .about__foto {
-    position: absolute;
-    width: 35%;
-    top: 20%;
-    right: 0; }
-    @media (max-width: 480px) {
-      .about__foto {
-        display: block;
-        position: relative;
-        width: 50%;
-        margin: 0 auto; } }
+.about__title {
+  margin-top: 30px; }
+
+.about__text {
+  margin-top: -20%;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  width: 60%;
+  text-align: justify; }
+  @media (max-width: 480px) {
+    .about__text {
+      margin-top: -35%;
+      width: 95%; } }
+
+.about__foto {
+  position: absolute;
+  width: 35%;
+  top: 20%;
+  right: 0; }
+  @media (max-width: 480px) {
+    .about__foto {
+      display: block;
+      position: relative;
+      width: 50%;
+      margin: 0 auto; } }
 
 .specifications {
   position: relative; }
@@ -647,7 +649,7 @@ input.invalid {
       display: block; }
 
 .skills {
-  background-color: #e8d1d5; }
+  margin-top: 220px; }
   .skills__circle-row {
     display: flex;
     justify-content: center;
@@ -673,7 +675,6 @@ input.invalid {
   transform: rotate(-90deg) translate(-200px, 0px); }
 
 .project {
-  background-color: #C9D4E2;
   padding-bottom: 50px; }
 
 .swiper-container {
@@ -718,11 +719,9 @@ input.invalid {
   color: transparent; }
 
 .contacts {
-  padding-bottom: 150px;
-  background-color: #FAE59C;
+  height: 85% !important;
   color: #915F6D;
-  font-size: 2rem;
-  height: 90%; }
+  font-size: 2rem; }
 
 .row {
   position: relative;

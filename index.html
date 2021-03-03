@@ -13,22 +13,22 @@
 
 <body id="particles-js">
 
-<div class="container">
+<div class="container slide" data-background="#c39aa1">
     <header class="header container__header">
         <button type="button" class="button header__button">
             <div class="lines button__lines"></div>
         </button>
         <nav class="nav header__nav">
-            <a href="#" class="active">Главная</a>
-            <a href="#">Обо мне</a>
-            <a href="#">Мои навыки</a>
-            <a href="#">Проекты</a>
-            <a href="#">Контакты</a>
+            <a href="#" class="active" onclick="$('#main').animatescroll({padding:500,scrollSpeed:500,easing:'easeInOutSine'});">Главная</a>
+            <a href="#" onclick="$('#about').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Обо мне</a>
+            <a href="#" onclick="$('#skills').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Мои навыки</a>
+            <a href="#" onclick="$('#projects').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Проекты</a>
+            <a href="#" onclick="$('#contacts').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Контакты</a>
         </nav>
 
     </header>
 
-    <section class="title">
+    <section class="title" id="main">
         <h1>Анастасия Белобородова</h1>
         <p>Web developer</p>
         <button class="basic title__basic" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">Заказать сайт</button>
@@ -51,7 +51,7 @@
     </section>
 </div>
 
-<section class="about">
+<section class="about slide" id="about" data-background="#A4C3BB">
     <div class="wrapper">
         <h2 class="title about__title" data-aos="fade-left" data-aos-duration="2000">Обо мне</h2>
         <div class="text about__text">
@@ -81,7 +81,7 @@
 
 </section>
 
-<section class="skills">
+<section class="skills slide" id="skills" data-background="#e8d1d5">
     <div class="wrapper">
         <h2 data-aos="fade-left" data-aos-duration="2000">Мои навыки</h2>
         <div class="circle-row skills__circle-row">
@@ -201,7 +201,7 @@
         </div>
 </section>
 
-<section class="project">
+<section class="project slide" id="projects" data-background="#C9D4E2">
     <div class="wrapper">
         <h2 data-aos="fade-left" data-aos-duration="2000">Проекты</h2>
         <div class="swiper-container">
@@ -228,7 +228,7 @@
 
 </section>
 
-<section class="contacts">
+<section class="contacts slide" id="contacts" data-background="#FAE59C">
     <div class="wrapper">
         <h2 data-aos="fade-left" data-aos-duration="2000">Контакты</h2>
         <div class="row">
@@ -285,6 +285,8 @@
 <script src="/dist/js/aos.js"></script>
 <script src="/dist/js/jquery.validate.min.js"></script>
 <script src="/dist/js/jquery.mask.min.js"></script>
+<script src="/dist/js/animatescroll.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
 <script src="/dist/js/main.js"></script>
 
 </body>

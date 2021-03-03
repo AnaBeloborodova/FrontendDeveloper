@@ -371,3 +371,21 @@ $(".row__form").validate({
 
 // маска для телефона
 $('[type=tel]').mask('+7(000) 000-0000');
+
+// Смена цвета фона у страницы
+$(window).ready(function (){
+    var wHeight = $(window).height();
+
+    $('.slide')
+        .height(wHeight)
+        .scrollie({
+            scrollOffset: -500,
+            scrollingInView: function (elem){
+                var bgColor = elem.data('background');
+
+                $('body').css('background-color', bgColor);
+
+            }
+        });
+});
+
