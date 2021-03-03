@@ -33,5 +33,83 @@
       width: 50%
       margin: 0 auto
 
+.specifications
+  position: relative
+  &__cross-browser
+    position: relative
+    text-decoration: underline
+    text-decoration-color: $dark
+    &:hover
+      cursor: pointer
+    &:after
+      content: ' ← способность веб-ресурса отображаться одинаково и работать во всех популярных браузерах'
+      position: absolute
+      left: 30%
+      top: 10px
+      font-size: 1.2rem
+      line-height: normal
+      color: $dark
+      display: none
+      text-decoration: none
+    &:hover:after
+      display: block
+
+
+  &__adaptive
+    position: relative
+    text-decoration: underline
+    text-decoration-color: $dark
+    &:hover
+      cursor: pointer
+    &:after
+      content: ' ← правильное отображение сайта на различных устройствах, подстраивающееся под заданные размеры окна браузера'
+      position: absolute
+      left: 23%
+      top: 8px
+      font-size: 1.2rem
+      line-height: normal
+      color: $dark
+      display: none
+      text-decoration: none
+    &:hover:after
+      display: block
+
+  &__speed
+    position: relative
+    text-decoration: underline
+    text-decoration-color: $dark
+    &:hover
+      cursor: pointer
+    &:after
+      content: ' ← показатель времени, прошедшего между кликом по ссылке адреса сайта и его полным отображением в окне браузера'
+      position: absolute
+      left: 60%
+      top: 8px
+      font-size: 1.2rem
+      line-height: normal
+      color: $dark
+      display: none
+      text-decoration: none
+    &:hover:after
+      display: block
+
+  &__optimized
+    position: relative
+    text-decoration: underline
+    text-decoration-color: $dark
+    &:hover
+      cursor: pointer
+    &:after
+      content: ' ← это ряд мероприятий, направленный на то, чтобы сделать ресурс не только полезным и интересным для посетителей, но и привлекательным для поисковых систем'
+      position: absolute
+      left: 42%
+      top: 8px
+      font-size: 1.2rem
+      line-height: normal
+      color: $dark
+      display: none
+      text-decoration: none
+    &:hover:after
+      display: block
 
 
