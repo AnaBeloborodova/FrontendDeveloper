@@ -490,7 +490,7 @@ canvas {
         padding-top: 5px;
         padding-bottom: 5px; } }
 
-a.active {
+nav a.active {
   color: #724b56;
   border: 3px solid white;
   transition: all 300ms ease-in 0s; }
