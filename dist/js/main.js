@@ -288,7 +288,8 @@ document.querySelector('.row__message').addEventListener('click', () => {
     rowForm.style.display = 'block';
 });
 
-rowForm.querySelector('.form__close').addEventListener('click', () => {
+rowForm.querySelector('.form__close').addEventListener('click', (event) => {
+    event.preventDefault();
     rowForm.style.display = 'none';
 });
 
@@ -297,7 +298,8 @@ document.querySelector('.title__basic').addEventListener('click', () => {
     titleForm.style.display = 'block';
 });
 
-titleForm.querySelector('.form__close').addEventListener('click', () => {
+titleForm.querySelector('.form__close').addEventListener('click', (event) => {
+    event.preventDefault();
     titleForm.style.display = 'none';
 });
 
