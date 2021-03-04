@@ -1,6 +1,10 @@
 .project
   margin-top: 50px
   //background-color: $quaternary
+  @media (max-width: $desktop)
+    margin-top: 300px
+  @media (max-width: $mobile)
+    margin-top: 1500px
 
 .swiper-container
   position: relative
@@ -35,10 +39,11 @@
     padding: 10px 20px
     bottom: 30px
     right: 150px
-
     & a
       text-decoration: none
       color: $light
+    @media (max-width: $mobile)
+      bottom: 0px
 
 
 .swiper-button-prev
