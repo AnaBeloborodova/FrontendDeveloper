@@ -1,7 +1,7 @@
 // Анимация проигрывается при скролле
 var animationStared = false;
 
-$(window).scroll(function() {
+$(window).scroll(function () {
     if (animationStared) return;
     if ($(window).scrollTop() + $(window).height() > $('svg').height() + $('svg').offset().top) {
         $('#myanim')[0].beginElement();
@@ -10,16 +10,16 @@ $(window).scroll(function() {
 });
 
 //счетчик цифр
-$(function() {
+$(function () {
 
     var target_block = $(".text-anim"); // Ищем блок
     var blockStatus = true;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
-        if(scrollEvent && blockStatus) {
+        if (scrollEvent && blockStatus) {
 
             blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
@@ -28,7 +28,7 @@ $(function() {
                 duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
                 easing: "linear",
 
-                step: function(val) {
+                step: function (val) {
 
                     $(".text-anim").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
 
@@ -42,16 +42,16 @@ $(function() {
 
 });
 
-$(function() {
+$(function () {
 
     var target_block = $(".text-anim3"); // Ищем блок
     var blockStatus = true;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
-        if(scrollEvent && blockStatus) {
+        if (scrollEvent && blockStatus) {
 
             blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
@@ -60,7 +60,7 @@ $(function() {
                 duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
                 easing: "linear",
 
-                step: function(val) {
+                step: function (val) {
 
                     $(".text-anim3").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
 
@@ -74,16 +74,16 @@ $(function() {
 
 });
 
-$(function() {
+$(function () {
 
     var target_block = $(".text-anim4"); // Ищем блок
     var blockStatus = true;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
-        if(scrollEvent && blockStatus) {
+        if (scrollEvent && blockStatus) {
 
             blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
@@ -92,7 +92,7 @@ $(function() {
                 duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
                 easing: "linear",
 
-                step: function(val) {
+                step: function (val) {
 
                     $(".text-anim4").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
 
@@ -106,16 +106,16 @@ $(function() {
 
 });
 
-$(function() {
+$(function () {
 
     var target_block = $(".text-anim5"); // Ищем блок
     var blockStatus = true;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
-        if(scrollEvent && blockStatus) {
+        if (scrollEvent && blockStatus) {
 
             blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
@@ -124,7 +124,7 @@ $(function() {
                 duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
                 easing: "linear",
 
-                step: function(val) {
+                step: function (val) {
 
                     $(".text-anim5").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
 
@@ -138,16 +138,16 @@ $(function() {
 
 });
 
-$(function() {
+$(function () {
 
     var target_block = $(".text-anim6"); // Ищем блок
     var blockStatus = true;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
-        if(scrollEvent && blockStatus) {
+        if (scrollEvent && blockStatus) {
 
             blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
@@ -156,7 +156,7 @@ $(function() {
                 duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
                 easing: "linear",
 
-                step: function(val) {
+                step: function (val) {
 
                     $(".text-anim6").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
 
@@ -170,16 +170,16 @@ $(function() {
 
 });
 
-$(function() {
+$(function () {
 
     var target_block = $(".text-anim7"); // Ищем блок
     var blockStatus = true;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
-        if(scrollEvent && blockStatus) {
+        if (scrollEvent && blockStatus) {
 
             blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
@@ -188,7 +188,7 @@ $(function() {
                 duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
                 easing: "linear",
 
-                step: function(val) {
+                step: function (val) {
 
                     $(".text-anim7").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
 
@@ -202,16 +202,16 @@ $(function() {
 
 });
 
-$(function() {
+$(function () {
 
     var target_block = $(".text-anim8"); // Ищем блок
     var blockStatus = true;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
-        if(scrollEvent && blockStatus) {
+        if (scrollEvent && blockStatus) {
 
             blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
@@ -220,7 +220,7 @@ $(function() {
                 duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
                 easing: "linear",
 
-                step: function(val) {
+                step: function (val) {
 
                     $(".text-anim8").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
 
@@ -234,16 +234,16 @@ $(function() {
 
 });
 
-$(function() {
+$(function () {
 
     var target_block = $(".text-anim10"); // Ищем блок
     var blockStatus = true;
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
 
         var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
-        if(scrollEvent && blockStatus) {
+        if (scrollEvent && blockStatus) {
 
             blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 
@@ -252,7 +252,7 @@ $(function() {
                 duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд
                 easing: "linear",
 
-                step: function(val) {
+                step: function (val) {
 
                     $(".text-anim10").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
 
@@ -284,20 +284,20 @@ AOS.init();
 // подключение форм
 
 let rowForm = document.querySelector('.row__form');
-document.querySelector('.row__message').addEventListener('click', ()=>{
+document.querySelector('.row__message').addEventListener('click', () => {
     rowForm.style.display = 'block';
 });
 
-rowForm.querySelector('.form__close').addEventListener('click', ()=>{
+rowForm.querySelector('.form__close').addEventListener('click', () => {
     rowForm.style.display = 'none';
 });
 
 let titleForm = document.querySelector('.title__form');
-document.querySelector('.title__basic').addEventListener('click', ()=>{
+document.querySelector('.title__basic').addEventListener('click', () => {
     titleForm.style.display = 'block';
 });
 
-titleForm.querySelector('.form__close').addEventListener('click', ()=>{
+titleForm.querySelector('.form__close').addEventListener('click', () => {
     titleForm.style.display = 'none';
 });
 
@@ -373,14 +373,14 @@ $(".row__form").validate({
 $('[type=tel]').mask('+7(000) 000-0000');
 
 // Смена цвета фона у страницы
-$(window).ready(function (){
+$(window).ready(function () {
     var wHeight = $(window).height();
 
     $('.slide')
         .height(wHeight)
         .scrollie({
             scrollOffset: -500,
-            scrollingInView: function (elem){
+            scrollingInView: function (elem) {
                 var bgColor = elem.data('background');
 
                 $('body').css('background-color', bgColor);
@@ -388,4 +388,45 @@ $(window).ready(function (){
             }
         });
 });
+
+//Выделение пунктов меню при прокрутке
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#nav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#nav a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
 

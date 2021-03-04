@@ -93,11 +93,7 @@ canvas
     color: $light
     border-top: 3px solid $light
     border-bottom: 3px solid $light
-  & a:focus,
-  & a:active
-    color: darken($dark, 10%)
-    border-top: 3px solid transparent
-    border-bottom: 3px solid transparent
+
 
   @media (max-width: $tablet)
     justify-content: space-around
@@ -117,10 +113,9 @@ canvas
       padding-top: 5px
       padding-bottom: 5px
 
-.active
-    border: 3px solid $light !important
-    color: $light !important
-
+a.active
+  color: darken($dark, 10%)
+  border: 3px solid $light
 
 label
   &.invalid

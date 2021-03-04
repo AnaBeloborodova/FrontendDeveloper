@@ -469,11 +469,6 @@ canvas {
     color: white;
     border-top: 3px solid white;
     border-bottom: 3px solid white; }
-  .nav a:focus,
-  .nav a:active {
-    color: #724b56;
-    border-top: 3px solid transparent;
-    border-bottom: 3px solid transparent; }
   @media (max-width: 768px) {
     .nav {
       justify-content: space-around; } }
@@ -494,9 +489,9 @@ canvas {
         padding-top: 5px;
         padding-bottom: 5px; } }
 
-.active {
-  border: 3px solid white !important;
-  color: white !important; }
+a.active {
+  color: #724b56;
+  border: 3px solid white; }
 
 label.invalid {
   color: tomato;
@@ -547,31 +542,31 @@ input.invalid {
   box-sizing: border-box;
   padding-top: 5px; }
 
-.about__title {
-  margin-top: 30px; }
-
-.about__text {
-  margin-top: -20%;
-  padding-left: 10px;
-  padding-bottom: 20px;
-  width: 60%;
-  text-align: justify; }
-  @media (max-width: 480px) {
-    .about__text {
-      margin-top: -35%;
-      width: 95%; } }
-
-.about__foto {
-  position: absolute;
-  width: 35%;
-  top: 20%;
-  right: 0; }
-  @media (max-width: 480px) {
-    .about__foto {
-      display: block;
-      position: relative;
-      width: 50%;
-      margin: 0 auto; } }
+.about {
+  margin-top: 50px; }
+  .about__title {
+    margin-top: 30px; }
+  .about__text {
+    margin-top: -20%;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    width: 60%;
+    text-align: justify; }
+    @media (max-width: 480px) {
+      .about__text {
+        margin-top: -35%;
+        width: 95%; } }
+  .about__foto {
+    position: absolute;
+    width: 35%;
+    top: 20%;
+    right: 0; }
+    @media (max-width: 480px) {
+      .about__foto {
+        display: block;
+        position: relative;
+        width: 50%;
+        margin: 0 auto; } }
 
 .specifications {
   position: relative; }
@@ -675,7 +670,7 @@ input.invalid {
   transform: rotate(-90deg) translate(-200px, 0px); }
 
 .project {
-  padding-bottom: 50px; }
+  margin-top: 50px; }
 
 .swiper-container {
   position: relative;
@@ -719,9 +714,12 @@ input.invalid {
   color: transparent; }
 
 .contacts {
+  margin-top: 150px;
   height: 85% !important;
   color: #915F6D;
   font-size: 2rem; }
+  .contacts h2 {
+    margin-top: 0; }
 
 .row {
   position: relative;

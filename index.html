@@ -11,19 +11,19 @@
 
 </head>
 
-<body id="particles-js">
+<body id="particles-js" data-spy="scroll" data-target="#nav">
 
 <div class="container slide" data-background="#c39aa1">
     <header class="header container__header">
         <button type="button" class="button header__button">
             <div class="lines button__lines"></div>
         </button>
-        <nav class="nav header__nav">
-            <a href="#" class="active" onclick="$('#main').animatescroll({padding:500,scrollSpeed:500,easing:'easeInOutSine'});">Главная</a>
-            <a href="#" onclick="$('#about').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Обо мне</a>
-            <a href="#" onclick="$('#skills').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Мои навыки</a>
-            <a href="#" onclick="$('#projects').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Проекты</a>
-            <a href="#" onclick="$('#contacts').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Контакты</a>
+        <nav id="nav" class="nav header__nav">
+            <a href="#main" class="active" onclick="$('#main').animatescroll({padding:500,scrollSpeed:500,easing:'easeInOutSine'});">Главная</a>
+            <a href="#about" onclick="$('#about').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Обо мне</a>
+            <a href="#skills" onclick="$('#skills').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Мои навыки</a>
+            <a href="#projects" onclick="$('#projects').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Проекты</a>
+            <a href="#contacts" onclick="$('#contacts').animatescroll({scrollSpeed:500,easing:'easeInOutSine'});">Контакты</a>
         </nav>
 
     </header>
@@ -287,6 +287,7 @@
 <script src="/dist/js/jquery.mask.min.js"></script>
 <script src="/dist/js/animatescroll.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2542/jquery.scrollie.min_1.js"></script>
+<!--<script src="/dist/js/nav.js"></script>-->
 <script src="/dist/js/main.js"></script>
 
 </body>
