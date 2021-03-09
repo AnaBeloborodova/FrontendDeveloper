@@ -303,6 +303,16 @@ titleForm.querySelector('.form__close').addEventListener('click', (event) => {
     titleForm.style.display = 'none';
 });
 
+let headerNav = document.querySelector('.header__nav');
+document.querySelector('.header__button').addEventListener('click', () => {
+    headerNav.style.visibility = 'visible';
+});
+
+headerNav.querySelector('.nav__close').addEventListener('click', (event) => {
+    event.preventDefault();
+    headerNav.style.visibility = 'hidden';
+});
+
 // Валидация формы
 
 $(".title__form").validate({

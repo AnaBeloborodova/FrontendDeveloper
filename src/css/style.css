@@ -426,22 +426,18 @@ canvas {
       box-shadow: 0 10px 0 white, 0 -10px 0 white;
       outline: none; }
     .header__button:focus, .header__button:active {
-      border: 2px solid #915F6D;
+      border: 2px solid transparent;
       border-radius: 8px;
       outline: none; }
     .header__button:focus > div,
     .header__button:active > div {
+      visibility: hidden;
       border: 1px solid #915F6D;
       box-shadow: 0 10px 0 #915F6D, 0 -10px 0 #915F6D;
       outline: none; }
     @media (max-width: 480px) {
       .header__button {
-        display: block; }
-        .header__button:focus, .header__button:active {
-          margin-left: 10px; }
-        .header__button:focus + nav,
-        .header__button:active + nav {
-          visibility: visible; } }
+        display: block; } }
 
 .button__lines {
   width: 40px;
@@ -469,6 +465,15 @@ canvas {
     color: white;
     border-top: 3px solid white;
     border-bottom: 3px solid white; }
+  .nav__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 21px;
+    height: 21px;
+    background: url("/dist/img/close.png") center no-repeat;
+    outline: none;
+    border: none; }
   @media (max-width: 768px) {
     .nav {
       justify-content: space-around; } }
@@ -476,15 +481,12 @@ canvas {
     .nav {
       position: absolute;
       visibility: hidden;
-      margin: 10px 10px;
+      top: 0;
       display: flex;
       flex-direction: column;
-      right: 0;
-      top: 0;
-      border: 1px solid #915F6D;
-      border-radius: 8px;
-      width: 80%;
-      padding: 10px 10px; }
+      width: 100%;
+      padding: 10px 10px;
+      background-color: rgba(195, 154, 161, 0.5); }
       .nav a {
         font-size: 2.4rem;
         padding-top: 5px;
@@ -657,7 +659,7 @@ input.invalid {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 80%;
+    max-width: 80%;
     margin: 0 auto;
     padding-bottom: 70px; }
 
@@ -670,8 +672,6 @@ input.invalid {
   .circle-row__circle-item span {
     font-size: 2rem;
     color: #915F6D; }
-  .circle-row__circle-item object {
-    border: 1px solid red; }
 
 .circle-animate {
   transform: rotate(-90deg) translate(-200px, 0px); }
@@ -680,7 +680,7 @@ input.invalid {
   margin-top: 50px; }
   @media (max-width: 1024px) {
     .project {
-      margin-top: 300px; } }
+      margin-top: 350px; } }
   @media (max-width: 480px) {
     .project {
       margin-top: 1500px; } }

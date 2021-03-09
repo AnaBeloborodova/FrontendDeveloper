@@ -44,24 +44,19 @@ canvas
 
     &:focus,
     &:active
-      border: 2px solid $dark
+      border: 2px solid transparent
       border-radius: 8px
       outline: none
 
+
     &:focus > div,
     &:active > div
+      visibility: hidden
       border: 1px solid $dark
       box-shadow: 0 10px 0 $dark, 0 -10px 0 $dark
       outline: none
     @media (max-width: $mobile)
       display: block
-      &:focus,
-      &:active
-        margin-left: 10px
-
-      &:focus + nav,
-      &:active + nav
-        visibility: visible
 
 
 .button
@@ -91,6 +86,15 @@ canvas
     color: $light
     border-top: 3px solid $light
     border-bottom: 3px solid $light
+  &__close
+    position: absolute
+    top: 5px
+    right: 5px
+    width: 21px
+    height: 21px
+    background: url("/dist/img/close.png") center no-repeat
+    outline: none
+    border: none
 
 
   @media (max-width: $tablet)
@@ -98,16 +102,12 @@ canvas
   @media (max-width: $mobile)
     position: absolute
     visibility: hidden
-    margin: 10px 10px
-
+    top: 0
     display: flex
     flex-direction: column
-    right: 0
-    top: 0
-    border: 1px solid $dark
-    border-radius: 8px
-    width: 80%
+    width: 100%
     padding: 10px 10px
+    background-color: rgba(195, 154, 161, 0.5)
     & a
       font-size: 2.4rem
       padding-top: 5px
