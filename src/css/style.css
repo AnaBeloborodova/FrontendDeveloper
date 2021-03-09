@@ -473,7 +473,11 @@ canvas {
     height: 21px;
     background: url("/dist/img/close.png") center no-repeat;
     outline: none;
-    border: none; }
+    border: none;
+    display: none; }
+    @media (max-width: 480px) {
+      .nav__close {
+        display: block; } }
   @media (max-width: 768px) {
     .nav {
       justify-content: space-around; } }
@@ -530,13 +534,13 @@ input.invalid {
     display: none;
     position: absolute;
     top: 100px;
-    right: 400px;
+    right: 10%;
     padding: 20px;
     z-index: 2;
     background-color: white;
     border: 2px solid rgba(145, 95, 109, 0.6);
     border-radius: 20px;
-    width: 50%;
+    width: 80%;
     font-size: 1.6rem;
     color: #915F6D; }
 
@@ -659,9 +663,17 @@ input.invalid {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     padding-bottom: 70px; }
+  .skills__more {
+    display: none;
+    margin: 0 auto;
+    font-size: 2rem; }
+    @media (max-width: 768px) {
+      .skills__more {
+        display: block;
+        margin-top: -600px; } }
 
 .circle-row__circle-item {
   display: flex;
@@ -669,6 +681,9 @@ input.invalid {
   justify-content: center;
   align-items: center;
   padding-bottom: 20px; }
+  @media (max-width: 768px) {
+    .circle-row__circle-item:nth-child(n+5) {
+      visibility: hidden; } }
   .circle-row__circle-item span {
     font-size: 2rem;
     color: #915F6D; }
@@ -681,9 +696,12 @@ input.invalid {
   @media (max-width: 1024px) {
     .project {
       margin-top: 350px; } }
+  @media (max-width: 768px) {
+    .project {
+      margin-top: 400px; } }
   @media (max-width: 480px) {
     .project {
-      margin-top: 1500px; } }
+      margin-top: 420px; } }
 
 .swiper-container {
   position: relative;
@@ -712,8 +730,8 @@ input.invalid {
   .swiper-slide button {
     position: absolute;
     padding: 10px 20px;
-    bottom: 30px;
-    right: 150px; }
+    bottom: 7%;
+    right: 12%; }
     .swiper-slide button a {
       text-decoration: none;
       color: white; }
@@ -754,7 +772,7 @@ input.invalid {
   .row__message {
     padding-left: 30px; }
     .row__message img {
-      width: 40px; }
+      max-width: 40px; }
     @media (max-width: 480px) {
       .row__message {
         margin-top: 50px; } }
@@ -762,12 +780,13 @@ input.invalid {
     display: none;
     position: absolute;
     top: -150px;
+    right: 10%;
     padding: 20px;
     z-index: 2;
     background-color: white;
     border: 2px solid rgba(145, 95, 109, 0.6);
     border-radius: 20px;
-    width: 50%;
+    width: 80%;
     font-size: 1.6rem; }
 
 .social__tel {
@@ -810,23 +829,36 @@ input.invalid {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px; }
+  @media (max-width: 1024px) {
+    .form div {
+      padding: 10px 0 0 0; } }
   .form div label {
     font-size: 1.5rem; }
+  .form div input {
+    width: 270px; }
+  .form div textarea {
+    width: 80%; }
   .form div input, .form div textarea {
     margin-top: 5px;
     padding-left: 10px;
     padding-bottom: 5px;
     outline: none;
     border: 2px solid lightgrey; }
+    @media (max-width: 1024px) {
+      .form div input, .form div textarea {
+        width: 90%; } }
     .form div input:hover, .form div input:active, .form div input:focus, .form div textarea:hover, .form div textarea:active, .form div textarea:focus {
       border: 2px solid #915F6D; }
-  .form div input {
-    width: 270px; }
 
 .form__tel {
   display: inline;
   float: right; }
+  @media (max-width: 1024px) {
+    .form__tel {
+      float: none; } }
 
 .form button {
   margin-top: 10px;

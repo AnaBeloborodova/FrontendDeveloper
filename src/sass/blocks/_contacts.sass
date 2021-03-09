@@ -23,7 +23,7 @@
   &__message
     padding-left: 30px
     & img
-      width: 40px
+      max-width: 40px
     @media (max-width: $mobile)
       margin-top: 50px
 
@@ -31,12 +31,13 @@
     display: none
     position: absolute
     top: -150px
+    right: 10%
     padding: 20px
     z-index: 2
     background-color: $light
     border: 2px solid rgba(145, 95, 109, 0.6)
     border-radius: 20px
-    width: 50%
+    width: 80%
     font-size: 1.6rem
 
 
@@ -83,24 +84,37 @@
     justify-content: center
     align-items: flex-start
     padding-top: 20px
+    padding-left: 60px
+    padding-right: 60px
+    @media (max-width: $desktop)
+      padding: 10px 0 0 0
     & label
       font-size: 1.5rem
+    & input
+      width: 270px
+    & textarea
+      width: 80%
     & input, & textarea
       margin-top: 5px
       padding-left: 10px
       padding-bottom: 5px
       outline: none
       border: 2px solid lightgrey
+      @media (max-width: $desktop)
+        width: 90%
+
       &:hover,
       &:active,
       &:focus
         border: 2px solid #915F6D
 
-    & input
-      width: 270px
+
+
   &__tel
     display: inline
     float: right
+    @media (max-width: $desktop)
+      float: none
   & button
     margin-top: 10px
     display: block
