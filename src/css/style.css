@@ -517,6 +517,9 @@ input.invalid {
   .title h1 {
     margin-top: -55px;
     text-align: center; }
+    @media (max-width: 480px) {
+      .title h1 {
+        margin-top: 10px; } }
   .title p {
     margin-top: -25px;
     text-transform: uppercase;
@@ -564,7 +567,6 @@ input.invalid {
     text-align: justify; }
     @media (max-width: 480px) {
       .about__text {
-        margin-top: -35%;
         width: 95%; } }
   .about__foto {
     position: absolute;
@@ -659,6 +661,7 @@ input.invalid {
     .skills {
       margin-bottom: 100px; } }
   .skills__circle-row {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -673,7 +676,9 @@ input.invalid {
     @media (max-width: 768px) {
       .skills__more {
         display: block;
-        margin-top: -600px; } }
+        position: absolute;
+        top: 55%;
+        left: 39%; } }
 
 .circle-row__circle-item {
   display: flex;
@@ -692,7 +697,7 @@ input.invalid {
   transform: rotate(-90deg) translate(-200px, 0px); }
 
 .project {
-  margin-top: 50px; }
+  margin-top: 150px; }
   @media (max-width: 1024px) {
     .project {
       margin-top: 350px; } }
@@ -701,7 +706,10 @@ input.invalid {
       margin-top: 400px; } }
   @media (max-width: 480px) {
     .project {
-      margin-top: 420px; } }
+      margin-top: 650px; } }
+  @media (max-width: 320px) {
+    .project {
+      margin-top: 1000px; } }
 
 .swiper-container {
   position: relative;
