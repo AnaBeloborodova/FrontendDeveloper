@@ -2,6 +2,8 @@
   margin-top: 500px
   @media (max-width: $desktop)
     margin-bottom: 100px
+  @media (max-width: $mobile)
+    margin-top: 80%
 
   //background-color: $tertiary
   &__circle-row
@@ -13,6 +15,32 @@
     max-width: 100%
     margin: 0 auto
     padding-bottom: 70px
+  &__hidden-skills
+    display: none
+
+    @media (max-width: $tablet)
+      display: block
+
+.hidden-skills
+  &__item
+    margin: 0 auto
+    margin-top: 10px
+    width: 80%
+    background-color: $light
+
+
+.item
+  &__dark
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    padding: 5px 10px
+    background-color: $dark
+    font-size: 2rem
+    color: $light
+
+/*
   &__more
     display: none
     margin: 0 auto
@@ -21,9 +49,11 @@
     @media (max-width: $tablet)
       display: block
       position: absolute
-      top: 55%
-      left: 39%
-
+      top: 61%
+      left: 33%
+    @media (max-width: $mobile)
+      top: 52%
+      left: 37% */
 
 
 
@@ -35,8 +65,7 @@
     align-items: center
     padding-bottom: 20px
     @media (max-width: $tablet)
-      &:nth-child(n+5)
-        visibility: hidden
+      display: none
 
     & span
       font-size: 2rem

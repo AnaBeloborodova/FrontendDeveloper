@@ -312,12 +312,12 @@ headerNav.querySelector('.nav__close').addEventListener('click', (event) => {
     event.preventDefault();
     headerNav.style.visibility = 'hidden';
 });
-
+/*
 let moreItem = document.querySelector('.more-item');
 document.querySelector('.skills__more').addEventListener('click', () => {
     moreItem.style.visibility = 'visible';
 });
-
+*/
 // Валидация формы
 
 $(".title__form").validate({
