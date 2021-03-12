@@ -510,12 +510,12 @@ input.invalid {
   border: 2px solid tomato; }
 
 .title {
-  margin: 20rem auto 22rem; }
+  margin: 18rem auto 10rem; }
   @media (max-width: 480px) {
     .title {
       margin-top: 110px; } }
   .title h1 {
-    margin-top: -70px;
+    margin-top: -55px;
     text-align: center; }
   .title p {
     margin-top: -25px;
@@ -551,14 +551,13 @@ input.invalid {
   margin: 0 auto;
   box-sizing: border-box;
   padding-top: 5px;
-  margin-top: 400px; }
+  margin-top: 100px; }
 
 .about {
   margin-top: 150px; }
-  .about__title {
-    margin-top: 30px; }
+  .about__title-head {
+    margin-top: 0; }
   .about__text {
-    margin-top: -20%;
     padding-left: 10px;
     padding-bottom: 20px;
     width: 60%;
@@ -749,7 +748,7 @@ input.invalid {
   color: transparent; }
 
 .contacts {
-  margin-top: 150px;
+  margin-top: 220px;
   height: 85% !important;
   color: #915F6D;
   font-size: 2rem; }
