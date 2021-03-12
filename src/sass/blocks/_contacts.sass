@@ -1,13 +1,7 @@
 .contacts
-  margin-top: 220px
   height: 85% !important
-  //background-color: $fifth
   color: $dark
   font-size: 2rem
-  @media (max-width: $mobile)
-    margin-top: -100%
-  & h2
-    margin-top: 0
 
 .row
   position: relative
@@ -24,9 +18,9 @@
     justify-content: left
     align-items: flex-start
   &__message
-    padding-left: 30px
+    padding-left: 40px
     & img
-      max-width: 40px
+      max-width: 25px
     @media (max-width: $mobile)
       margin-top: 50px
 
@@ -45,19 +39,25 @@
 
 
 .social
+  font-size: 2.4rem
   &__tel
+    display: flex
+    justify-content: center
+    align-items: center
     padding-bottom: 15px
-    & a
-      padding-left: 5px
 
     & img
+      margin-right: 10px
       width: 30px
       height: 30px
       &:hover
         transform: scale(1.1)
-    & b
-      padding-left: 10px
+
+
   &__gmail
+    display: flex
+    justify-content: center
+    align-items: center
     padding-bottom: 15px
     text-decoration: none
     color: $dark
@@ -68,8 +68,12 @@
         transform: scale(1.1)
     & b
       padding-left: 10px
+
 
   &__discord
+    display: flex
+    justify-content: center
+    align-items: center
     text-decoration: none
     color: $dark
     & img
@@ -79,6 +83,7 @@
         transform: scale(1.1)
     & b
       padding-left: 10px
+
 
 .form
   & div
@@ -111,18 +116,15 @@
       &:focus
         border: 2px solid #915F6D
 
-
-
   &__tel
     display: inline
     float: right
     @media (max-width: $desktop)
       float: none
   & button
-    margin-top: 10px
-    display: block
     margin: 0 auto
     margin-top: 10px
+    display: block
     padding-left: 30px
     padding-right: 30px
   &__close

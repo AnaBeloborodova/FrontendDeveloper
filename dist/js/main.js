@@ -396,7 +396,7 @@ $(window).ready(function () {
     $('.slide')
         .height(wHeight)
         .scrollie({
-            scrollOffset: -400,
+            scrollOffset: -500,
             scrollingInView: function (elem) {
                 var bgColor = elem.data('background');
 

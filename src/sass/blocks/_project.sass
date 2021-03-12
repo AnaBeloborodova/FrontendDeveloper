@@ -1,16 +1,3 @@
-.project
-  margin-top: 150px
-  //background-color: $quaternary
-  @media (max-width: $desktop-full)
-    margin-top: 40%
-  @media (max-width: $desktop)
-    margin-top: 80%
-  @media (max-width: $tablet)
-    margin-top: 0
-  @media (max-width: $mobile)
-    margin-top: -50%
-
-
 .swiper-container
   position: relative
   width: 100%
@@ -41,14 +28,17 @@
 
   & button
     position: absolute
-    padding: 10px 20px
+    padding: 5px 20px
     bottom: 7%
     right: 12%
+    font-size: 1rem
     & a
       text-decoration: none
       color: $light
+      &:hover
+        color: darken($dark, 20%)
     @media (max-width: $mobile)
-      bottom: 0px
+      bottom: 3px
 
 
 
