@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pavbel.github.io.iml" filepath="$PROJECT_DIR$/.idea/pavbel.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/FrontendDeveloper.iml" filepath="$PROJECT_DIR$/.idea/FrontendDeveloper.iml" />
     </modules>
   </component>
 </project>

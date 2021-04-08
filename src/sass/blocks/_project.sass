@@ -28,17 +28,22 @@
 
   & button
     position: absolute
-    padding: 5px 20px
-    bottom: 7%
-    right: 12%
-    font-size: 1rem
+    padding: 20px 45px
+    bottom: 45%
+    right: 42%
+    font-size: 2rem
+    opacity: 0.9
     & a
       text-decoration: none
       color: $light
       &:hover
         color: darken($dark, 20%)
+    @media (max-width: $tablet)
+      bottom: 10px
+      right: 100px
     @media (max-width: $mobile)
-      bottom: 3px
+      right: 50px
+      padding: 10px 25px
 
 
 

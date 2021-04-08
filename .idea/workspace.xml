@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3d26986-9f6a-42d1-bca2-6d6692d40cb0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dist/img/project4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/img/project5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pavbel.github.io.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_project.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_project.sass" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
+  <component name="ProjectId" id="1iqqAQe6hQHYGuc1Sek4FNZ1v2j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WEB\OSPanel\domains\FrontendDeveloper" />
+      <recent name="D:\WEB\anasasia_project\FrontendDeveloper\dist\js" />
+      <recent name="D:\WEB\GitHub\pavbel.github.io\dist\img\portfolio" />
+      <recent name="D:\WEB\GitHub\pavbel.github.io\dist\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.gulp" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>start</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gulp.js.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3d26986-9f6a-42d1-bca2-6d6692d40cb0" name="Default Changelist" comment="" />
+      <created>1602645325650</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602645325650</updated>
+      <workItem from="1602645326808" duration="5728000" />
+      <workItem from="1613553915833" duration="1766000" />
+      <workItem from="1613623939153" duration="11000" />
+      <workItem from="1613630774241" duration="10206000" />
+      <workItem from="1613650002197" duration="26893000" />
+      <workItem from="1613800015871" duration="475000" />
+      <workItem from="1613919070514" duration="20000" />
+      <workItem from="1613997508106" duration="75362000" />
+      <workItem from="1614332089378" duration="3413000" />
+      <workItem from="1614656422535" duration="34630000" />
+      <workItem from="1614754896443" duration="4464000" />
+      <workItem from="1614761208567" duration="4837000" />
+      <workItem from="1614826525141" duration="18586000" />
+      <workItem from="1614851150494" duration="1087000" />
+      <workItem from="1614860713269" duration="1521000" />
+      <workItem from="1614871759633" duration="2339000" />
+      <workItem from="1614874143036" duration="21000" />
+      <workItem from="1614874194961" duration="1067000" />
+      <workItem from="1615256088742" duration="1356000" />
+      <workItem from="1615264460961" duration="6000" />
+      <workItem from="1615264807855" duration="32000" />
+      <workItem from="1615264948452" duration="721000" />
+      <workItem from="1615265705572" duration="11000" />
+      <workItem from="1615265788188" duration="1744000" />
+      <workItem from="1615267606449" duration="1517000" />
+      <workItem from="1615269421299" duration="1793000" />
+      <workItem from="1615271237794" duration="1440000" />
+      <workItem from="1615273200365" duration="1793000" />
+      <workItem from="1615275013685" duration="1793000" />
+      <workItem from="1615276833087" duration="4041000" />
+      <workItem from="1615280896147" duration="147000" />
+      <workItem from="1615357224967" duration="153000" />
+      <workItem from="1615358834446" duration="48000" />
+      <workItem from="1615359840799" duration="122000" />
+      <workItem from="1615361123478" duration="67000" />
+      <workItem from="1615362635898" duration="1647000" />
+      <workItem from="1615364638227" duration="600000" />
+      <workItem from="1615368897044" duration="67000" />
+      <workItem from="1615445404106" duration="1806000" />
+      <workItem from="1615453656321" duration="2412000" />
+      <workItem from="1615465827662" duration="249000" />
+      <workItem from="1615466197356" duration="129000" />
+      <workItem from="1615466777029" duration="31000" />
+      <workItem from="1615517764192" duration="2180000" />
+      <workItem from="1615520069775" duration="693000" />
+      <workItem from="1615520778708" duration="1845000" />
+      <workItem from="1615555703468" duration="2386000" />
+      <workItem from="1615558107593" duration="12373000" />
+      <workItem from="1615793969105" duration="8000" />
+      <workItem from="1616390748197" duration="1478000" />
+      <workItem from="1616464465157" duration="1420000" />
+      <workItem from="1616483179048" duration="741000" />
+      <workItem from="1616493593622" duration="7000" />
+      <workItem from="1616904803258" duration="825000" />
+      <workItem from="1617208260801" duration="51000" />
+      <workItem from="1617209666230" duration="12000" />
+      <workItem from="1617209832227" duration="5000" />
+      <workItem from="1617769057166" duration="36000" />
+      <workItem from="1617774804071" duration="22000" />
+      <workItem from="1617853834307" duration="854000" />
+    </task>
+    <task id="LOCAL-00001" summary="update octeber 2020">
+      <created>1602651038794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602651038794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="update octeber 2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="update octeber 2020" />
+  </component>
+</project>
