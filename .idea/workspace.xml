@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3d26986-9f6a-42d1-bca2-6d6692d40cb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/img/project6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/img/project7.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_header.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +151,8 @@
       <workItem from="1617769057166" duration="36000" />
       <workItem from="1617774804071" duration="22000" />
       <workItem from="1617853834307" duration="903000" />
-      <workItem from="1622018445422" duration="933000" />
+      <workItem from="1622018445422" duration="1707000" />
+      <workItem from="1622020264595" duration="176000" />
     </task>
     <task id="LOCAL-00001" summary="update octeber 2020">
       <created>1602651038794</created>
